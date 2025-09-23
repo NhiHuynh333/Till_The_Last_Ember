@@ -345,7 +345,7 @@ function draw() {
   }
   
   else if (state === "stage3stone") {
-  background(0);
+   background("#111");
 
   for (let x = 0; x < col.length; x++) {
     col[x].jump();
@@ -371,7 +371,7 @@ function draw() {
 
 // 🔥 trong stage3heart chỉ vẽ hiệu ứng, KHÔNG check stage3done nữa
 else if (state === "stage3heart") {
-  background(0);
+  background("#111");
   let elapsed = millis() - stoneHeartStartTime;
 
   // Matrix
@@ -443,7 +443,7 @@ else if (state === "stage3heart") {
 
 //--- stage3done ---
 else if (state === "stage3done") {
-  background(0);
+   background("#111");
 
   // Starfield background
   push();
